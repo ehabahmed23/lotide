@@ -16,5 +16,3 @@ const assertArraysEqual = function(arry1, arry2) {
       console.log("❌❌❌ The 2 arrays are equal", result)
     }
 }
-//assertArraysEqual([1, 2, 3], [1, 2, 3])// => true
-//assertArraysEqual([1, 2, 3], [3, 2, 1]) // => false
