@@ -44,9 +44,14 @@ const assertEqual = function(actual, expected) {
     return true;
   };
 
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-console.log(eqObjects(multiColorShirtObject  , anotherMultiColorShirtObject)); // => true
-
-const longSleeveMultiColorShirtObject= { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-console.log(eqObjects(multiColorShirtObject  , longSleeveMultiColorShirtObject)); // => false
+const assertObjectsEqual = function(actual, expected) {
+  const inspect = require('util').inspect;
+  if (actual === expected) {
+    console.log(`✅✅✅ The 2 Objects are equal: ${inspect(actual)}`);
+  }else {
+    console.log(`❌❌❌ The 2 Objects not equal: ${inspect(actual)}`);
+  }
+};
+let a = {a: 1, b: 2, c: 3,};
+let b = {a: 1, b: 2, c: 3,};
+assertObjectsEqual(eqObjects(a, b), true);
