@@ -15,7 +15,7 @@ const assertArraysEqual = function(arry1, arry2) {
     if(result){
       console.log("✅✅✅ The 2 arrays are equal:", result)
     } else{
-      console.log("❌❌❌ The 2 arrays are equal", result)
+      console.log("❌❌❌ The 2 arrays are not equal", result)
     }
 }
 
