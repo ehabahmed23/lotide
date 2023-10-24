@@ -1,9 +1,13 @@
-const assertEqual = require('../assertEqual');
+const eqArrays = require('../eqArrays');
 const tail = require('../tail');
+const assert = require('chai').assert;
 
 
-// Test Case: Check the original array 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-console.log(tail(words));
+describe("#tail Test", () => {
+  it('returns true if the tail of this ["Yo Yo", "Lighthouse", "Labs"] === ["Lighthouse", "Labs"]', () => {
+    assert.strictEqual(eqArrays(tail(["Yo Yo", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]), true);
+  });
+  it('returns true if the tail of this [8, 9, 10, 11] === [9, 10, 11]', () => {
+    assert.strictEqual(eqArrays(tail([8, 9, 10, 11]), [9, 10, 11]), true);
+  });
+});
