@@ -1,7 +1,7 @@
 {
   "name": "lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a mini clone of lotide created by me for learning purposes and is not intended for use in production-grade software",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,10 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/ehabahmed23/lotide.git"
   },
-  "author": "",
+  "author": "ehab ahmed",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ehabahmed23/lotide/issues"
+    "url": "https://github.com/ehabahmed23/lotide"
   },
   "homepage": "https://github.com/ehabahmed23/lotide#readme",
   "devDependencies": {
