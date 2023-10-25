@@ -10,6 +10,3 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 module.exports = assertObjectsEqual;
-// let a = {a: 1, b: 2, c: 4,};
-// let b = {a: 1, b: 2, c: 3,};
-// assertObjectsEqual(a, b);
